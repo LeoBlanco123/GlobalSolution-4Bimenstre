@@ -1,5 +1,4 @@
-# HyperReach 💻🤖
-![logo.png](documentacao%2Ffotos%2Flogo.png)
+EcoWater 🚢🌎
 
 # Sumário
 [Integrantes](#integrantes)  
@@ -27,8 +26,8 @@ Ficou responsavel por C#, Devops
 
 # Como rodar a aplicação
 
-SRC > MAIN > JAVA > BR.COM.FIAP.CHALLENGE > ChallengePlusoftApplication  
-Rodar a aplicação atraves do 'ChallengePlusoftApplication'.
+    SRC > MAIN > JAVA > BR.COM.FIAP.GLOBAL > GlobalSolution  
+Rodar a aplicação atraves do 'GlobalSolution'.
 
 # Diagramas
 
@@ -49,30 +48,33 @@ https://www.youtube.com/watch?v=V7Ntv5wPsF0
 
 # End Points
 
-    1. **EmpresasResource** com as seguintes ROTAS e VERBOS:
-       1. "localhost/empresas" - **GET by Example**,
-       2. "localhost/empresas" - **POST**
-       3. "localhost/empresas/{id}" - **GET**
+    1. **ProprietariosResource** com as seguintes ROTAS e VERBOS:
+        1. "localhost/proprietarios" - **POST**
+        2. "localhost/proprietarios" - **GET by Example**,
+        3. "localhost/proprietarios/{id}" - **GET**
     
-    2. **ComportamentoNegociosResource** com as seguintes ROTAS e VERBOS:
-       1. "localhost/comportamento" - **GET by Example**,
-       2. "localhost/comportamento" - **POST**
-       3. "localhost/comportamento/{id}" - **GET**
-       
-    3. **DesempenhoFinanceiroResource** com as seguintes ROTAS e VERBOS:
-       1. "localhost/desempenho" - **GET by Example**,
-       2. "localhost/desempenho" - **POST**
-       3. "localhost/desempenho/{id}" - **GET**
+    2. **EmbarcacoesResource** com as seguintes ROTAS e VERBOS:
+        1. "localhost/embarcacoes" - **POST**
+        2. "localhost/embarcacoes" - **GET by Example**,
+        3. "localhost/embarcacoes/{id}" - **GET**
+        
+    3. **SensoresResource** com as seguintes ROTAS e VERBOS:
+        1. "localhost/sensores" - **POST**
+        2. "localhost/sensores" - **GET by Example**,
+        3. "localhost/sensores/{id}" - **GET**
 
-    4. **HistoricoInteracoesResource** com as seguintes ROTAS e VERBOS:
-       1. "localhost/historico" - **GET by Example**,
-       2. "localhost/historico" - **POST**
-       3. "localhost/historico/{id}" - **GET**
+    4. **IncidentesResource** com as seguintes ROTAS e VERBOS:
+        1. "localhost/incidentes" - **POST**
+        2. "localhost/incidentes" - **GET by Example**,
+        3. "localhost/incidentes/{id}" - **GET**
 
-    5. **TendenciasGastosResource** com as seguintes ROTAS e VERBOS:
-       1. "localhost/tendencias" - **GET by Example**,
-       2. "localhost/tendencias" - **POST**
-       3. "localhost/tendencias/{id}" - **GET**
-    
-    
+    5. **MonitoramentosResource** com as seguintes ROTAS e VERBOS:
+        1. "localhost/monitoramentos" - **POST**
+        2. "localhost/monitoramentos" - **GET by Example**,
+        3. "localhost/monitoramentos/{id}" - **GET**
 
+    6. **RegistrosPoluicaoResource** com as seguintes ROTAS e VERBOS:
+        1. "localhost/registros-poluicao" - **POST**
+        2. "localhost/registros-poluicao" - **GET by Example**,
+        3. "localhost/registros-poluicao/{id}" - **GET**
+        

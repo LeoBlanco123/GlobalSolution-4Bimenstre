@@ -1,4 +1,4 @@
-EcoWater 🚢🌎
+#EcoWater 🚢🌎
 
 # Sumário
 [Integrantes](#integrantes)  

@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "b1f31939-dbd9-4b58-ba1c-5998d8c34f06",
+		"name": "GlobalSolution",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33457030",
+		"_collection_link": "https://www.postman.com/telecoms-geoscientist-71037752/workspace/challenge/collection/33457030-b1f31939-dbd9-4b58-ba1c-5998d8c34f06?action=share&source=collection_link&creator=33457030"
+	},
+	"item": [
+		{
+			"name": "001",
+			"item": [
+				{
+					"name": "proprietarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"João Silva\",\r\n  \"endereco\": \"Rua das Flores, 123, São Paulo, SP\",\r\n  \"telefone\": \"(11) 98765-4321\",\r\n  \"email\": \"joao.silva@example.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:80/proprietarios",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"proprietarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "proprietarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/proprietarios",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"proprietarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "proprietarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/proprietarios/1",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"proprietarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "002",
+			"item": [
+				{
+					"name": "embarcacoes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Navio Mercante\",\r\n  \"tipo\": \"Cargueiro\",\r\n  \"bandeira\": \"Brasil\",\r\n  \"capacidade\": 50000.0,\r\n  \"anoFabricacao\": 2010,\r\n  \"proprietarios\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:80/embarcacoes",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"embarcacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "embarcacoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/embarcacoes",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"embarcacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "embarcacoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/embarcacoes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"embarcacoes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "003",
+			"item": [
+				{
+					"name": "sensores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"tipo\": \"Temperatura\",\r\n  \"localizacao\": \"Sala de servidores\",\r\n  \"dataInstalacao\": \"2024-05-15\",\r\n  \"status\": \"Ativo\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:80/sensores",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"sensores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sensores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/sensores",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"sensores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sensores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/sensores/1",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"sensores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "004",
+			"item": [
+				{
+					"name": "incidentes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"embarcacoes\": {\r\n        \"id\": 1\r\n    },\r\n    \"data\": \"2024-06-01\",\r\n    \"descricao\": \"Derramamento de óleo na costa\",\r\n    \"tipoPoluicao\": \"Óleo\",\r\n    \"severidade\": \"Alta\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:80/incidentes",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"incidentes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "incidentes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/incidentes",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"incidentes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "incidentes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/incidentes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"incidentes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "005",
+			"item": [
+				{
+					"name": "monitoramentos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": \"2024-06-01\",\r\n  \"hora\": \"14:30\",\r\n  \"localizacao\": \"Costa Oeste\",\r\n  \"nivelPoluicao\": 7.5,\r\n  \"embarcacoes\": {\r\n    \"id\": 1\r\n  },\r\n  \"sensores\": {\r\n        \"id\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:80/monitoramentos",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"monitoramentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "monitoramentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/monitoramentos",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"monitoramentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "monitoramentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/monitoramentos/2",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"monitoramentos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "006",
+			"item": [
+				{
+					"name": "registros-poluicao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": \"2024-06-02\",\r\n  \"hora\": \"14:30\",\r\n  \"localizacao\": \"Baía de Guanabara\",\r\n  \"tipoPoluicao\": \"Óleo\",\r\n  \"quantidadePoluida\": 500.0,\r\n  \"testemunhas\": \"João da Silva, Maria Souza\",\r\n  \"embarcacoes\": {\r\n    \"id\": 1\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:80/registros-poluicao",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"registros-poluicao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registros-poluicao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/registros-poluicao",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"registros-poluicao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registros-poluicao Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:80/registros-poluicao/1",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"registros-poluicao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

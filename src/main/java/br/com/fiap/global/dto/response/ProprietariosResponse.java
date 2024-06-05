@@ -2,6 +2,9 @@ package br.com.fiap.global.dto.response;
 
 import lombok.Builder;
 
+import java.util.List;
+import java.util.Map;
+
 @Builder
 public record ProprietariosResponse(
 
@@ -9,6 +12,7 @@ public record ProprietariosResponse(
         String nome,
         String endereco,
         String telefone,
-        String email
+        String email,
+        List<Map<String, String>> links
 ) {
 }

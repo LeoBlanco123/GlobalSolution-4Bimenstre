@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
+import java.util.*;
 
 @Service
 public class ProprietariosService  implements ServiceDTO<Proprietarios, ProprietariosRequest, ProprietariosResponse>{
@@ -46,14 +46,49 @@ public class ProprietariosService  implements ServiceDTO<Proprietarios, Propriet
                 .build();
     }
 
+    private Map<String, String> createLink(String rel, String href) {
+        Map<String, String> link = new HashMap<>();
+        link.put("rel", rel);
+        link.put("href", href);
+        return link;
+    }
+
     @Override
     public ProprietariosResponse toResponse(Proprietarios e) {
+
+        List<Map<String, String>> links = new ArrayList<>();
+
+        links.add(createLink("GET by Example", "http://localhost/proprietarios/1"));
+        links.add(createLink("GET", "http://localhost/proprietarios/1"));
+        links.add(createLink("POST", "http://localhost/proprietarios"));
+
+        links.add(createLink("GET by Example", "http://localhost/embarcacoes/1"));
+        links.add(createLink("GET", "http://localhost/embarcacoes/1"));
+        links.add(createLink("POST", "http://localhost/embarcacoes"));
+
+        links.add(createLink("GET by Example", "http://localhost/sensores/1"));
+        links.add(createLink("GET", "http://localhost/sensores/1"));
+        links.add(createLink("POST", "http://localhost/sensores"));
+
+        links.add(createLink("GET by Example", "http://localhost/incidentes/1"));
+        links.add(createLink("GET", "http://localhost/incidentes/1"));
+        links.add(createLink("POST", "http://localhost/incidentes"));
+
+        links.add(createLink("GET by Example", "http://localhost/monitoramentos/1"));
+        links.add(createLink("GET", "http://localhost/monitoramentos/1"));
+        links.add(createLink("POST", "http://localhost/monitoramentos"));
+
+        links.add(createLink("GET by Example", "http://localhost/registros-poluicao/1"));
+        links.add(createLink("GET", "http://localhost/registros-poluicao/1"));
+        links.add(createLink("POST", "http://localhost/registros-poluicao"));
+
         return ProprietariosResponse.builder()
                 .id(e.getId())
                 .email(e.getEmail())
                 .endereco(e.getEndereco())
                 .nome(e.getNome())
                 .telefone(e.getTelefone())
+                .links(links)
                 .build();
     }
 }

@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -28,22 +30,25 @@ public class ProprietariosResource implements ResourceDTO<ProprietariosRequest, 
             @RequestParam(name = "nome", required = false) String nome,
             @RequestParam(name = "endereco", required = false) String endereco,
             @RequestParam(name = "telefone", required = false) String telefone,
-            @RequestParam(name = "email", required = false) String email
+            @RequestParam(name = "email", required = false) String email,
+            @RequestParam(name = "links", required = false) List<Map<String, String>> links
+
     ) {
-        Proprietarios proprietario = Proprietarios.builder()
+        ProprietariosResponse proprietario = ProprietariosResponse.builder()
                 .nome(nome)
                 .endereco(endereco)
                 .telefone(telefone)
                 .email(email)
+                .links(links)
                 .build();
 
         ExampleMatcher matcher = ExampleMatcher.matchingAll()
                 .withIgnoreNullValues()
                 .withIgnoreCase();
 
-        Example<Proprietarios> example = Example.of(proprietario, matcher);
+        Example<ProprietariosResponse> example = Example.of(proprietario, matcher);
 
-        var encontrados = service.findAll(example);
+        var encontrados = service.findAll();
         if (encontrados.isEmpty()) return ResponseEntity.notFound().build();
         var resposta = encontrados.stream()
                 .map(service::toResponse)

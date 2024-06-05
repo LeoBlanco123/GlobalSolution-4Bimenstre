@@ -47,6 +47,7 @@ Rodar a aplicação atraves do 'GlobalSolution'.
 https://www.youtube.com/watch?v=V7Ntv5wPsF0
 
 # End Points
+Link Postman: https://www.postman.com/telecoms-geoscientist-71037752/workspace/challenge/collection/33457030-b1f31939-dbd9-4b58-ba1c-5998d8c34f06?action=share&creator=33457030
 
     1. **ProprietariosResource** com as seguintes ROTAS e VERBOS:
         1. "localhost/proprietarios" - **POST**

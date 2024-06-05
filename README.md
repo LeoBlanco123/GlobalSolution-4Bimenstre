@@ -25,7 +25,7 @@ Ficou responsavel por Banco de Dados
 Ficou responsavel por C#, Devops
 
 # Como rodar a aplicação
-O programa está rodando em uma VM, para funcionar o sistema, entre no link abaixo, pois já esta rodando a aplicação:
+O programa está rodando em uma VM, para funcionar o sistema, entre no link abaixo, pois já esta rodando a aplicação:   
 Link: 
 
 # Diagramas
@@ -43,7 +43,7 @@ Link:
 ![arquitetura.png](documentacao%2Fdiagramas-classes%2Farquitetura.png)
 
 # Link dos Videos
-Video Pitch: 
+Video Pitch: https://www.youtube.com/watch?v=aG6flSJQT6c   
 Video Java: 
 
 # End Points

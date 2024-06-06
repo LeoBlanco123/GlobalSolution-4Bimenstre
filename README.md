@@ -1,4 +1,5 @@
 # EcoWater 🚢🌎
+![LogoReadme.png](documentacao%2FLogo%2FLogoReadme.png)
 
 # Sumário
 [Integrantes](#integrantes)  

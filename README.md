@@ -27,7 +27,7 @@ Ficou responsavel por C#, Devops
 
 # Como rodar a aplicação
 O programa está rodando em uma VM, para funcionar o sistema, entre no link abaixo, pois já esta rodando a aplicação:   
-Link: 
+Link: http://172.210.12.65:8081/
 
 # Diagramas
 
@@ -42,6 +42,12 @@ Link:
 
 ## Diagrama de Arquitetura
 ![arquitetura.png](documentacao%2Fdiagramas-classes%2Farquitetura.png)
+
+## MER
+![mer.png](documentacao%2Fdiagramas-classes%2Fmer.png)
+
+## DER
+![der.png](documentacao%2Fdiagramas-classes%2Fder.png)
 
 # Link dos Videos
 Video Pitch: https://www.youtube.com/watch?v=aG6flSJQT6c   

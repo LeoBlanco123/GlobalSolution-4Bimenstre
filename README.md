@@ -13,13 +13,13 @@
 Ficou responsavel por Java
 
 ### Leonardo Yuuki – rm550373
-Ficou responsavel por fazer IA, Mobile
+Ficou responsavel por fazer Mobile, Devops
 
 ### Gustavo Moreira - rm97999
 Ficou responsavel por fazer QA
 
 ### Paulo Henrique – rm98082
-Ficou responsavel por Banco de Dados
+Ficou responsavel por Banco de Dados e IA
 
 ### Daniel Soares -rm552184
 Ficou responsavel por C#, Devops
@@ -44,7 +44,7 @@ Link:
 
 # Link dos Videos
 Video Pitch: https://www.youtube.com/watch?v=aG6flSJQT6c   
-Video Java: 
+Video Java: https://www.youtube.com/watch?v=4B-9R-tODME   
 
 # End Points
 

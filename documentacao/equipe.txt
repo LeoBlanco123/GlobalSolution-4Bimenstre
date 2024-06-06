@@ -4,4 +4,4 @@ RM:98082    NOME:Paulo Henrique     TURMA:2TDSPL
 RM:97999    NOME:Gustavo Morreira   TURMA:2TDSPL
 RM:552184   NOME:Daniel Soares      TURMA:2TDSPL
 
-+1 Ponto - Respondi corretamente a pergunta, falei que faltava um @RequestMapping
++1 Ponto - Respondi corretamente a pergunta, falei que faltava um @RequestMapping, Dia 06/05

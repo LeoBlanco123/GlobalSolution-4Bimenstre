@@ -26,8 +26,10 @@ Ficou responsavel por Banco de Dados e IA
 Ficou responsavel por C#, Devops
 
 # Como rodar a aplicação
-O programa está rodando em uma VM, para funcionar o sistema, entre no link abaixo, pois já esta rodando a aplicação:   
-Link: http://172.210.12.65:8081/
+O programa está rodando em uma VM, entre no link abaixo e em seguida coloque o login e senha para consiguir acessar o sistema:   
+Link: http://172.210.12.65:8081/  
+Login: teste123@gmail.com  
+Senha: senha123
 
 # Diagramas
 
